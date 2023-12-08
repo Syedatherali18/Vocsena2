@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const createServiceRouter = require('./Router/Create-Service');
+const signUpRouter = require('./Router/Sign-up');
 const app = express();
 
 const port = 8000;
@@ -16,6 +17,8 @@ mongoose.connect(url)
     });
 
 app.use('/', createServiceRouter);
+
+app.use('/', signUpRouter);
 
 //203.101.177.234/32
 //37.111.177.135/32
