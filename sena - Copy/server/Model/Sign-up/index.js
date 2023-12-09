@@ -23,7 +23,7 @@ const signUpSchema = new mongoose.Schema(
             trim: true,
             lowercase: true
         },
-        password: {
+        passcode: {
             type: String,
             required: true,
             minlength: 8,

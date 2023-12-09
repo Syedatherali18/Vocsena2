@@ -5,7 +5,7 @@ const signUpFormatter = (signUp) => {
         lastName: signUp.summary,
         gender: signUp.gender,
         email: signUp.email,
-        password: signUp.password
+        password: signUp.passcode
     }
 };
 
